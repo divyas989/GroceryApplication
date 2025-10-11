@@ -6,55 +6,66 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ManageNewsPage {
-	
+
 	public WebDriver driver;
+
 	public ManageNewsPage(WebDriver driver) {
-		
-		this.driver=driver;
+
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
-	
-}
-	@FindBy(xpath="//a[@onclick='click_button(1)']")WebElement newButton;
-	@FindBy(id="news")WebElement newTextbox;
-	@FindBy(xpath="//button[@type='submit']")WebElement saveButton;
-	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")WebElement searchButton;
-	@FindBy(xpath="//input[@type='text']")WebElement searchText;
-	@FindBy(xpath="//button[@type='submit']")WebElement searchSubmitBtn;
-	
-	//Assertion
-	@FindBy(xpath = "//div[contains(@class, 'alert-success')]")WebElement newsCreationSuccessMsg;
-	@FindBy(xpath = "//tr[1]/td[1]")WebElement searchResultTable;
-	
+
+	}
+
+	@FindBy(xpath = "//a[@onclick='click_button(1)']")
+	WebElement newButton;
+	@FindBy(id = "news")
+	WebElement newTextbox;
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement saveButton;
+	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
+	WebElement searchButton;
+	@FindBy(xpath = "//input[@type='text']")
+	WebElement searchText;
+	@FindBy(xpath = "//button[@type='submit']")
+	WebElement searchSubmitBtn;
+
+	// Assertion
+	@FindBy(xpath = "//div[contains(@class, 'alert-success')]")
+	WebElement newsCreationSuccessMsg;
+	@FindBy(xpath = "//tr[1]/td[1]")
+	WebElement searchResultTable;
+
 	public void newBtnClick() {
 		newButton.click();
 	}
-	
+
 	public void newTextBoxMsg() {
 		newTextbox.sendKeys("Morning Dews");
 	}
+
 	public void saveButtonClick() {
 		saveButton.click();
 	}
-	
+
 	public void searchButtonClick() {
 		searchButton.click();
 	}
-	
+
 	public void searchNewsText() {
 		searchText.sendKeys("Morning Dews");
 	}
-	
+
 	public void searchSubmitButtonClick() {
 		searchSubmitBtn.click();
 	}
-	//Assertion
+
+	// Assertion
 	public boolean isNewsCreationSuccessAlertDisplayed() {
 		return newsCreationSuccessMsg.isDisplayed();
 	}
+
 	public String isUserListed() {
 		return searchResultTable.getText();
 	}
-		
-		}
 
-	
+}

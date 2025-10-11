@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CrossBrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browsers" value="Edge"/>
+    <classes>
+      <class name="testScripts.HomeTest">
+        <methods>
+          <include name="verifyLogoutUponClickingLogout"/>
+          <include name="driverQuit"/>
+          <include name="intialiseBrowser"/>
+        </methods>
+      </class> <!-- testScripts.HomeTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowser] -->

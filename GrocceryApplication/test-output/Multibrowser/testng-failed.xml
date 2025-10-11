@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browsers" value="Chrome"/>
-  <listeners>
-    <listener class-name="reportGeneration.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="classes" name="Failed suite [Multibrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test1(failed)">
+    <parameter name="browsers" value="Chrome"/>
     <classes>
       <class name="testScripts.LoginTest">
         <methods>
@@ -15,5 +12,5 @@
         </methods>
       </class> <!-- testScripts.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Multibrowser] -->

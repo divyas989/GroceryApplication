@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-08T18:42:01 IST" name="Suite" finished-at="2025-10-08T18:42:06 IST" duration-ms="5357">
+  <suite started-at="2025-10-11T23:39:38 IST" name="Suite" finished-at="2025-10-11T23:39:44 IST" duration-ms="5572">
     <groups>
+      <group name="smoke">
+        <method signature="LoginTest.verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@4470fbd6]" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" class="testScripts.LoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-10-08T18:42:01 IST" name="Test" finished-at="2025-10-08T18:42:06 IST" duration-ms="5357">
+    <test started-at="2025-10-11T23:39:38 IST" name="Test" finished-at="2025-10-11T23:39:44 IST" duration-ms="5572">
       <class name="testScripts.LoginTest">
-        <test-method is-config="true" signature="intialiseBrowser()[pri:0, instance:testScripts.LoginTest@46d59067]" started-at="2025-10-08T18:42:01 IST" name="intialiseBrowser" finished-at="2025-10-08T18:42:04 IST" duration-ms="3053" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWheterUserisAbleToLoginWithValidCredentials()[pri:0, instance:testScripts.LoginTest@46d59067]" started-at="2025-10-08T18:42:04 IST" name="verifyWheterUserisAbleToLoginWithValidCredentials" finished-at="2025-10-08T18:42:06 IST" duration-ms="2253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWheterUserisAbleToLoginWithValidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@46d59067]" started-at="2025-10-08T18:42:06 IST" name="driverQuit" finished-at="2025-10-08T18:42:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@4470fbd6]" started-at="2025-10-11T23:39:38 IST" name="intialiseBrowser" finished-at="2025-10-11T23:39:41 IST" duration-ms="2472" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWheterUserisAbleToLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyWheterUserisAbleToLoginWithValidCredentials()[pri:0, instance:testScripts.LoginTest@46d59067] output={null}]]]>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialiseBrowser -->
+        <test-method signature="verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@4470fbd6]" started-at="2025-10-11T23:39:41 IST" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" description="User is trying to login with Invalid credentials" data-provider="loginProvider" finished-at="2025-10-11T23:39:41 IST" duration-ms="727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin22]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWheteherUserisAbleToLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@4470fbd6]" started-at="2025-10-11T23:39:41 IST" name="driverQuit" finished-at="2025-10-11T23:39:41 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWheteherUserisAbleToLoginWithInvalidCredentials status=SUCCESS method=LoginTest.verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@4470fbd6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@4470fbd6]" started-at="2025-10-11T23:39:41 IST" name="intialiseBrowser" finished-at="2025-10-11T23:39:43 IST" duration-ms="1708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialiseBrowser -->
+        <test-method signature="verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@4470fbd6]" started-at="2025-10-11T23:39:43 IST" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" description="User is trying to login with Invalid credentials" data-provider="loginProvider" finished-at="2025-10-11T23:39:44 IST" duration-ms="597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWheteherUserisAbleToLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@4470fbd6]" started-at="2025-10-11T23:39:44 IST" name="driverQuit" finished-at="2025-10-11T23:39:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWheteherUserisAbleToLoginWithInvalidCredentials status=SUCCESS method=LoginTest.verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@4470fbd6] output={null}]]]>
               </value>
             </param>
           </params>
