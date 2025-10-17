@@ -11,9 +11,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.PageUtility;
+import utilities.WaitUtility;
+
 public class AdminUsersPage {
 
 	public WebDriver driver;
+	WaitUtility wait = new WaitUtility();
+	PageUtility pageutl = new PageUtility();
 
 	public AdminUsersPage(WebDriver driver) {
 		this.driver = driver;
@@ -40,6 +45,7 @@ public class AdminUsersPage {
 	WebElement searchDrpDwn;
 	@FindBy(xpath = "//button[@name='Search']")
 	WebElement srchBtn;
+	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[1]") WebElement searchUser;
 
 	// reset
 	@FindBy(xpath = "//i[@class='ace-icon fa fa-sync-alt']")
@@ -49,50 +55,77 @@ public class AdminUsersPage {
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
 	WebElement newAlert;
 
-	public void newBtnClick() {
+	public AdminUsersPage newBtnClick() {
 		newBtn.click();
+		return this;
 	}
 
-	public void enterUsernameOnUsernameField(String userNam) {
+	public AdminUsersPage enterUsernameOnUsernameField(String userNam) {
 		userName.sendKeys(userNam);
+		return this;
+
 	}
 
-	public void enterPasswordOnPasswordField(String passWordval) {
+	public AdminUsersPage enterPasswordOnPasswordField(String passWordval) {
 		passWord.sendKeys(passWordval);
+		return this;
 	}
 
-	public void selectDrpDwn() {
-		Select select = new Select(searchDrpDwn);
-		select.selectByValue("staff");
+	public AdminUsersPage selectDrpDwn() {
+		// Select select = new Select(searchDrpDwn);
+		// select.selectByValue("staff");//by index dropdwnbtn
+		pageutl.selectDropdownWithValue(searchDrpDwn, "staff");// used PageUtility
+		return this;
+
+	}
+	public AdminUsersPage userTypeDropDown() {
+		// Select select = new Select(searchDrpDwn);
+		// select.selectByValue("staff");//by index dropdwnbtn
+		pageutl.selectDropdownWithValue(userType, "staff");// used PageUtility
+		return this;
+
 	}
 
-	public void saveBtnClick() {
+	public AdminUsersPage saveBtnClick() {
 		saveBtn.click();// New user added steps done
+		return this;
 	}
 
-	public void searchBtnClick() { // search
+	public AdminUsersPage searchBtnClick() { // search
 		searchBtn.click();
+		return this;
 	}
 
-	public void searchUserTypeClick() {
-		searchUserName.sendKeys("pla");
+	public AdminUsersPage searchUserTypeClick(String user) {
+		searchUserName.sendKeys(user);
+		return this;
 	}
 
-	public void searchUserType() {
-		Select select = new Select(userType);
-		select.selectByValue("staff");
+	public AdminUsersPage searchUserType() {
+		// Select select = new Select(userType);
+		// select.selectByValue("staff");
+		pageutl.selectDropdownWithValue(userType, "staff");// used page Utility
+		return this;
+
 	}
 
-	public void searchUserBtnClick() {
+	public AdminUsersPage searchUserBtnClick() {
 		srchBtn.click();
+		return this;
 
 	}
 
-	public void resetBtnClick1() {
+	public AdminUsersPage resetBtnClick1() {
 		resetBtn.click();
+		return this;
+	}
+	
+	public String isUserListed() {
+		wait.waitUntilElementIsVisible(driver, searchUser);
+		return searchUser.getText();
 	}
 
-	public String AlertDisplayed() {
+	public String alertDisplayed() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement alertBox = wait.until(ExpectedConditions.visibilityOfElementLocated(
 				By.xpath("//div[contains(@class,'alert') and contains(@class,'alert-dismissible')]")));

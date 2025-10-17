@@ -10,12 +10,10 @@
 		<classes>
 
 			<class name="testScripts.LoginTest">
-				<methods>
-					<include
-						name="verifyWheteherUserisAbleToLoginWithInvalidCredentials"></include>
-				</methods>
-
 			</class>
+			<class name="testScripts.HomeTest"></class>
+			<class name="testScripts.AdminUsersTest"></class>
+			<class name="testScripts.ManageNewsTest"></class>
 
 		</classes>
 	</test> <!--

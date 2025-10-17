@@ -5,9 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.WaitUtility;
+
 public class ManageNewsPage {
 
 	public WebDriver driver;
+	WaitUtility wait = new WaitUtility();
 
 	public ManageNewsPage(WebDriver driver) {
 
@@ -35,28 +38,35 @@ public class ManageNewsPage {
 	@FindBy(xpath = "//tr[1]/td[1]")
 	WebElement searchResultTable;
 
-	public void newBtnClick() {
+	public ManageNewsPage newBtnClick() {
 		newButton.click();
+		return this;
 	}
 
-	public void newTextBoxMsg() {
+	public ManageNewsPage newTextBoxMsg() {
 		newTextbox.sendKeys("Morning Dews");
+		return this;
+		
 	}
 
-	public void saveButtonClick() {
+	public ManageNewsPage saveButtonClick() {
 		saveButton.click();
+		return this;
 	}
 
-	public void searchButtonClick() {
+	public ManageNewsPage searchButtonClick() {
 		searchButton.click();
+		return this;
 	}
 
-	public void searchNewsText() {
+	public ManageNewsPage searchNewsText() {
 		searchText.sendKeys("Morning Dews");
+		return this;
 	}
 
-	public void searchSubmitButtonClick() {
+	public ManageNewsPage searchSubmitButtonClick() {
 		searchSubmitBtn.click();
+		return this;
 	}
 
 	// Assertion
@@ -65,6 +75,7 @@ public class ManageNewsPage {
 	}
 
 	public String isUserListed() {
+		wait.waitUntilElementIsVisible(driver, searchResultTable);
 		return searchResultTable.getText();
 	}
 

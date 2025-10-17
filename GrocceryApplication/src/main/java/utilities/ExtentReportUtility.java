@@ -20,3 +20,5 @@ public class ExtentReportUtility {
 
 	}
 }
+//public ExtentSparkReporter sparkReporter; //UI of the report
+//public ExtentReports extent; //populate common 

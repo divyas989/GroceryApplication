@@ -26,25 +26,29 @@ public class HomePage {
 	@FindBy(xpath = "//a[@class='small-box-footer'and contains(@href,'list-news')]")
 	WebElement manageNewsMoreInfo;
 
-	public void adminIconClick() {
+	public HomePage adminIconClick() {
 		adminIcon.click();
+		return this;
 	}
 
-	public void logoutBtnClick() {
+	public LoginPage logoutBtnClick() {
 		logoutBtn.click();
+		return new LoginPage(driver);
 	}
 
 	public String actualURL() {
 		return driver.getCurrentUrl();
 	}
 
-	public void adminUsersmoreInfolinkClick() {
+	public AdminUsersPage adminUsersmoreInfolinkClick() {
 		adminUsersmoreInfolink.click();
+		return new AdminUsersPage(driver);
 	}
 
-	public void manageNewsMoreInfoClick() {
-
+	public ManageNewsPage manageNewsMoreInfoClick() {
 		manageNewsMoreInfo.click();
+		return new ManageNewsPage(driver);
+
 	}
 
 }
