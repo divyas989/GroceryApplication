@@ -45,11 +45,13 @@ public class AdminUsersPage {
 	WebElement searchDrpDwn;
 	@FindBy(xpath = "//button[@name='Search']")
 	WebElement srchBtn;
-	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[1]") WebElement searchUser;
+	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']/tbody/tr[1]/td[1]")
+	WebElement searchUser;
 
 	// reset
 	@FindBy(xpath = "//i[@class='ace-icon fa fa-sync-alt']")
 	WebElement resetBtn;
+	@FindBy(xpath="//h4[text()='Search Admin Users']")WebElement searchAdminUsers;
 
 	// Assertion
 	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
@@ -78,6 +80,7 @@ public class AdminUsersPage {
 		return this;
 
 	}
+
 	public AdminUsersPage userTypeDropDown() {
 		// Select select = new Select(searchDrpDwn);
 		// select.selectByValue("staff");//by index dropdwnbtn
@@ -119,9 +122,9 @@ public class AdminUsersPage {
 		resetBtn.click();
 		return this;
 	}
-	
+
 	public String isUserListed() {
-		wait.waitUntilElementIsVisible(driver, searchUser);
+		//wait.waitUntilElementIsVisible(driver, searchUser);
 		return searchUser.getText();
 	}
 
@@ -139,7 +142,7 @@ public class AdminUsersPage {
 
 	public boolean IsresetHappen() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.invisibilityOf(searchUserName));// invisibility of any element?
-		return searchUserName.isDisplayed();
+		//wait.until(ExpectedConditions.invisibilityOf(searchUserName));// invisibility of any element?
+		return searchAdminUsers.isDisplayed();
 	}
 }

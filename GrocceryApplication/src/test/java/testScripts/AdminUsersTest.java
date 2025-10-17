@@ -23,16 +23,16 @@ public class AdminUsersTest extends Base {
 		String passwordValue = ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
 		login.enterUserNameOnUserNameField(userNameValue).enterPasswordOnPasswordField(passwordValue);
-		homePage=login.loginButtonClick();
+		homePage = login.loginButtonClick();
 
-	
-		admin=homePage.adminUsersmoreInfolinkClick();// homepage admin users click
+		admin = homePage.adminUsersmoreInfolinkClick();// homepage admin users click
 
 		RandomDataUtility random = new RandomDataUtility();
 		String userNam = random.createRandomUserName();
 		String passWordval = random.createRandomPassword();// faker usage
-        admin.newBtnClick();
-		admin.enterUsernameOnUsernameField(userNam).enterPasswordOnPasswordField(passWordval).userTypeDropDown().saveBtnClick();
+		admin.newBtnClick();
+		admin.enterUsernameOnUsernameField(userNam).enterPasswordOnPasswordField(passWordval).userTypeDropDown()
+				.saveBtnClick();
 
 		// String expected= "×\r\n"+ "Alert!\r\n"+ "User Created Successfully";
 		String actual = admin.alertDisplayed();
@@ -47,17 +47,17 @@ public class AdminUsersTest extends Base {
 		String passwordValue = ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
 		login.enterUserNameOnUserNameField(userNameValue).enterPasswordOnPasswordField(passwordValue);
-		homePage=login.loginButtonClick();
+		homePage = login.loginButtonClick();
 
-		admin=homePage.adminUsersmoreInfolinkClick();
-        String user="Caleb";
-	    admin.searchBtnClick().searchUserTypeClick(user).selectDrpDwn();
+		admin = homePage.adminUsersmoreInfolinkClick();
+		String user = "Caleb";
+		admin.searchBtnClick().searchUserTypeClick(user).selectDrpDwn();
 		admin.searchUserBtnClick();// To search for an already existing user.
-		String expected=user;
+		String expected = user;
 
-	     String actual= admin.isUserListed();
-	     Assert.assertEquals(actual, expected,"Unable to search");
-		 
+		String actual = admin.isUserListed();
+		Assert.assertEquals(actual, expected, "Unable to search");
+
 	}
 
 	@Test
@@ -66,19 +66,19 @@ public class AdminUsersTest extends Base {
 		String passwordValue = ExcelUtility.readStringData(0, 1, "LoginPage");
 		LoginPage login = new LoginPage(driver);
 		login.enterUserNameOnUserNameField(userNameValue).enterPasswordOnPasswordField(passwordValue);
-		homePage=login.loginButtonClick();
+		homePage = login.loginButtonClick();
 
-	
-		admin=homePage.adminUsersmoreInfolinkClick();// homepage admin users click
+		admin = homePage.adminUsersmoreInfolinkClick();// homepage admin users click
 
-		
-		admin.searchBtnClick().searchUserBtnClick().resetBtnClick1();// to identify driver first search and then return for reset
-		
+		admin.searchBtnClick().searchUserBtnClick().resetBtnClick1();// to identify driver first search and then return
+																		// for reset
 
 		// Assertion
 		Boolean resetHappened = admin.IsresetHappen();
 		System.out.println(resetHappened);
 		Assert.assertFalse(resetHappened, Constant.UnAbletoResetError);
+		
 	}
+	
 
-}
+	}

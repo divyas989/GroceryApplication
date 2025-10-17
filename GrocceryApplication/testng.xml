@@ -15,7 +15,15 @@
 			<class name="testScripts.AdminUsersTest"></class>
 			<class name="testScripts.ManageNewsTest"></class>
 
+			<!--<class name="testScripts.AdminUsersTest">
+<methods><include name="verifyUserIsAbleToAddNewUser"></include></methods>
+
+
+</class>
+-->
 		</classes>
+
+
 	</test> <!--
 	Test -->
 </suite> <!--

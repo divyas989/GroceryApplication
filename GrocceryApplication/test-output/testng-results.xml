@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="13" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-17T16:28:19 IST" name="Suite" finished-at="2025-10-17T16:29:21 IST" duration-ms="62162">
+  <suite started-at="2025-10-17T19:04:41 IST" name="Suite" finished-at="2025-10-17T19:05:43 IST" duration-ms="61883">
     <groups>
       <group name="smoke">
         <method signature="LoginTest.verifyWheterUserisAbleToLoginWithValidCredentials()[pri:1, instance:testScripts.LoginTest@1c9b0314]" name="verifyWheterUserisAbleToLoginWithValidCredentials" class="testScripts.LoginTest"/>
         <method signature="LoginTest.verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@1c9b0314]" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" class="testScripts.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-10-17T16:28:19 IST" name="Test" finished-at="2025-10-17T16:29:21 IST" duration-ms="62162">
+    <test started-at="2025-10-17T19:04:41 IST" name="Test" finished-at="2025-10-17T19:05:43 IST" duration-ms="61883">
       <class name="testScripts.AdminUsersTest">
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:28:49 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:53 IST" duration-ms="4469" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:10 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:15 IST" duration-ms="4911" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToAddNewUser()[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:28:53 IST" name="verifyUserIsAbleToAddNewUser" finished-at="2025-10-17T16:28:57 IST" duration-ms="4022" status="PASS">
+        <test-method signature="verifyUserIsAbleToAddNewUser()[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:15 IST" name="verifyUserIsAbleToAddNewUser" finished-at="2025-10-17T19:05:19 IST" duration-ms="3936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToAddNewUser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:28:57 IST" name="driverQuit" finished-at="2025-10-17T16:28:57 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:19 IST" name="driverQuit" finished-at="2025-10-17T19:05:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:28:57 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:59 IST" duration-ms="2223" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:19 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:21 IST" duration-ms="2113" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToReset()[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:28:59 IST" name="verifyUserIsAbleToReset" finished-at="2025-10-17T16:29:02 IST" duration-ms="2783" status="PASS">
+        <test-method signature="verifyUserIsAbleToReset()[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:21 IST" name="verifyUserIsAbleToReset" finished-at="2025-10-17T19:05:23 IST" duration-ms="2534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToReset -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:29:02 IST" name="driverQuit" finished-at="2025-10-17T16:29:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:23 IST" name="driverQuit" finished-at="2025-10-17T19:05:23 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:29:02 IST" name="intialiseBrowser" finished-at="2025-10-17T16:29:05 IST" duration-ms="2674" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:23 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:26 IST" duration-ms="3188" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,11 +74,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToSearchUser()[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:29:05 IST" name="verifyUserIsAbleToSearchUser" finished-at="2025-10-17T16:29:08 IST" duration-ms="2909" status="PASS">
+        <test-method signature="verifyUserIsAbleToSearchUser()[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:26 IST" name="verifyUserIsAbleToSearchUser" finished-at="2025-10-17T19:05:29 IST" duration-ms="3097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToSearchUser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T16:29:08 IST" name="driverQuit" finished-at="2025-10-17T16:29:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.AdminUsersTest@769a1df5]" started-at="2025-10-17T19:05:29 IST" name="driverQuit" finished-at="2025-10-17T19:05:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScripts.AdminUsersTest -->
       <class name="testScripts.HomeTest">
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.HomeTest@3e78b6a5]" started-at="2025-10-17T16:28:40 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:46 IST" duration-ms="5944" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.HomeTest@3e78b6a5]" started-at="2025-10-17T19:05:05 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:08 IST" duration-ms="3285" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,11 +102,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyLogoutUponClickingLogout()[pri:0, instance:testScripts.HomeTest@3e78b6a5]" started-at="2025-10-17T16:28:46 IST" name="verifyLogoutUponClickingLogout" finished-at="2025-10-17T16:28:49 IST" duration-ms="2901" status="PASS">
+        <test-method signature="verifyLogoutUponClickingLogout()[pri:0, instance:testScripts.HomeTest@3e78b6a5]" started-at="2025-10-17T19:05:08 IST" name="verifyLogoutUponClickingLogout" finished-at="2025-10-17T19:05:10 IST" duration-ms="1557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoutUponClickingLogout -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.HomeTest@3e78b6a5]" started-at="2025-10-17T16:28:49 IST" name="driverQuit" finished-at="2025-10-17T16:28:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.HomeTest@3e78b6a5]" started-at="2025-10-17T19:05:10 IST" name="driverQuit" finished-at="2025-10-17T19:05:10 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScripts.HomeTest -->
       <class name="testScripts.LoginTest">
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:19 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:23 IST" duration-ms="4247" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:41 IST" name="intialiseBrowser" finished-at="2025-10-17T19:04:45 IST" duration-ms="4077" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,11 +130,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWheterUserisAbleToLoginWithValidCredentials()[pri:1, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:23 IST" name="verifyWheterUserisAbleToLoginWithValidCredentials" description="User is trying to login with valid credentials" finished-at="2025-10-17T16:28:26 IST" duration-ms="2542" status="PASS">
+        <test-method signature="verifyWheterUserisAbleToLoginWithValidCredentials()[pri:1, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:45 IST" name="verifyWheterUserisAbleToLoginWithValidCredentials" description="User is trying to login with valid credentials" finished-at="2025-10-17T19:04:48 IST" duration-ms="2650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWheterUserisAbleToLoginWithValidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:26 IST" name="driverQuit" finished-at="2025-10-17T16:28:26 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:48 IST" name="driverQuit" finished-at="2025-10-17T19:04:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,7 +145,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:26 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:28 IST" duration-ms="2541" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:48 IST" name="intialiseBrowser" finished-at="2025-10-17T19:04:50 IST" duration-ms="2041" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +156,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:28 IST" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" description="User is trying to login with Invalid credentials" data-provider="loginProvider" finished-at="2025-10-17T16:28:29 IST" duration-ms="824" status="PASS">
+        <test-method signature="verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:50 IST" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" description="User is trying to login with Invalid credentials" data-provider="loginProvider" finished-at="2025-10-17T19:04:50 IST" duration-ms="727" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,7 +172,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWheteherUserisAbleToLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:29 IST" name="driverQuit" finished-at="2025-10-17T16:28:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:50 IST" name="driverQuit" finished-at="2025-10-17T19:04:50 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,7 +183,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:29 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:31 IST" duration-ms="2034" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:50 IST" name="intialiseBrowser" finished-at="2025-10-17T19:04:53 IST" duration-ms="2390" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,7 +194,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:31 IST" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" description="User is trying to login with Invalid credentials" data-provider="loginProvider" finished-at="2025-10-17T16:28:32 IST" duration-ms="944" status="PASS">
+        <test-method signature="verifyWheteherUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:2, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:53 IST" name="verifyWheteherUserisAbleToLoginWithInvalidCredentials" description="User is trying to login with Invalid credentials" data-provider="loginProvider" finished-at="2025-10-17T19:04:53 IST" duration-ms="647" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,7 +210,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWheteherUserisAbleToLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:32 IST" name="driverQuit" finished-at="2025-10-17T16:28:32 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:53 IST" name="driverQuit" finished-at="2025-10-17T19:04:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -221,7 +221,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:32 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:35 IST" duration-ms="3315" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:53 IST" name="intialiseBrowser" finished-at="2025-10-17T19:04:57 IST" duration-ms="3300" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -232,11 +232,114 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd()[pri:3, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:35 IST" name="verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd" description="User is trying to login with valid username and invalid password" finished-at="2025-10-17T16:28:36 IST" duration-ms="930" status="PASS">
+        <test-method retried="true" signature="verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd()[pri:3, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:57 IST" name="verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd" description="User is trying to login with valid username and invalid password" finished-at="2025-10-17T19:04:57 IST" duration-ms="643" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.77)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dd4d7e1e12b10f1e9067c545daf95c3, getElementText {id=f.A612EC3C34AC3772124F5E504B049A4E.d.D6AC4DF43A4FBBC503332993C36804CC.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.77, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65316/devtoo..., se:cdpVersion: 141.0.7390.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dd4d7e1e12b10f1e9067c545daf95c3)] -> xpath: //b[text()='7rmart supermarket']]
+Session ID: 1dd4d7e1e12b10f1e9067c545daf95c3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.77)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dd4d7e1e12b10f1e9067c545daf95c3, getElementText {id=f.A612EC3C34AC3772124F5E504B049A4E.d.D6AC4DF43A4FBBC503332993C36804CC.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.77, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65316}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65316/devtoo..., se:cdpVersion: 141.0.7390.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dd4d7e1e12b10f1e9067c545daf95c3)] -> xpath: //b[text()='7rmart supermarket']]
+Session ID: 1dd4d7e1e12b10f1e9067c545daf95c3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+at pages.LoginPage.isTitleDisplayed(LoginPage.java:60)
+at testScripts.LoginTest.verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd(LoginTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:36 IST" name="driverQuit" finished-at="2025-10-17T16:28:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:57 IST" name="driverQuit" finished-at="2025-10-17T19:04:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd status=SKIP method=LoginTest.verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd()[pri:3, instance:testScripts.LoginTest@1c9b0314] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:04:57 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:00 IST" duration-ms="2265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialiseBrowser -->
+        <test-method signature="verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd()[pri:3, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:05:00 IST" name="verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd" description="User is trying to login with valid username and invalid password" finished-at="2025-10-17T19:05:01 IST" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherUserisAbleToLoginWithValidUsernameInvalidPaswrd -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:05:01 IST" name="driverQuit" finished-at="2025-10-17T19:05:01 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,7 +350,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:36 IST" name="intialiseBrowser" finished-at="2025-10-17T16:28:39 IST" duration-ms="2249" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:05:01 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:04 IST" duration-ms="2790" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -258,11 +361,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWhetherUserisAbleToLoginWithInvalidUsernameValidPaswrd()[pri:4, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:39 IST" name="verifyWhetherUserisAbleToLoginWithInvalidUsernameValidPaswrd" finished-at="2025-10-17T16:28:40 IST" duration-ms="1047" status="PASS">
+        <test-method signature="verifyWhetherUserisAbleToLoginWithInvalidUsernameValidPaswrd()[pri:4, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:05:04 IST" name="verifyWhetherUserisAbleToLoginWithInvalidUsernameValidPaswrd" finished-at="2025-10-17T19:05:05 IST" duration-ms="1133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWhetherUserisAbleToLoginWithInvalidUsernameValidPaswrd -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T16:28:40 IST" name="driverQuit" finished-at="2025-10-17T16:28:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.LoginTest@1c9b0314]" started-at="2025-10-17T19:05:05 IST" name="driverQuit" finished-at="2025-10-17T19:05:05 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -275,7 +378,7 @@
         </test-method> <!-- driverQuit -->
       </class> <!-- testScripts.LoginTest -->
       <class name="testScripts.ManageNewsTest">
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T16:29:08 IST" name="intialiseBrowser" finished-at="2025-10-17T16:29:12 IST" duration-ms="3885" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T19:05:29 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:34 IST" duration-ms="4163" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -286,11 +389,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWhetherUserIsAbleToAddNewNews()[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T16:29:12 IST" name="verifyWhetherUserIsAbleToAddNewNews" finished-at="2025-10-17T16:29:16 IST" duration-ms="4491" status="PASS">
+        <test-method signature="verifyWhetherUserIsAbleToAddNewNews()[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T19:05:34 IST" name="verifyWhetherUserIsAbleToAddNewNews" finished-at="2025-10-17T19:05:37 IST" duration-ms="3097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWhetherUserIsAbleToAddNewNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T16:29:16 IST" name="driverQuit" finished-at="2025-10-17T16:29:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T19:05:37 IST" name="driverQuit" finished-at="2025-10-17T19:05:37 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -301,7 +404,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T16:29:16 IST" name="intialiseBrowser" finished-at="2025-10-17T16:29:18 IST" duration-ms="2463" status="PASS">
+        <test-method is-config="true" signature="intialiseBrowser(java.lang.String)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T19:05:37 IST" name="intialiseBrowser" finished-at="2025-10-17T19:05:41 IST" duration-ms="3833" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -312,15 +415,96 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialiseBrowser -->
-        <test-method signature="verifyWhetherUserIsAbleToSearchAddedNews()[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T16:29:18 IST" name="verifyWhetherUserIsAbleToSearchAddedNews" finished-at="2025-10-17T16:29:21 IST" duration-ms="2592" status="PASS">
+        <test-method signature="verifyWhetherUserIsAbleToSearchAddedNews()[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T19:05:41 IST" name="verifyWhetherUserIsAbleToSearchAddedNews" finished-at="2025-10-17T19:05:42 IST" duration-ms="1898" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.77)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4413985de099d6e1bea8e732b5bd272d, isElementDisplayed {id=f.5BCE33FE4D70FEB45BEF6F7F7B8932B8.d.6F3F48DF933EF195606DAF92E21F4025.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.77, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53977/devtoo..., se:cdpVersion: 141.0.7390.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4413985de099d6e1bea8e732b5bd272d)] -> xpath: //tr[1]/td[1]]
+Session ID: 4413985de099d6e1bea8e732b5bd272d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=141.0.7390.77)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4413985de099d6e1bea8e732b5bd272d, isElementDisplayed {id=f.5BCE33FE4D70FEB45BEF6F7F7B8932B8.d.6F3F48DF933EF195606DAF92E21F4025.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.77, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53977/devtoo..., se:cdpVersion: 141.0.7390.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4413985de099d6e1bea8e732b5bd272d)] -> xpath: //tr[1]/td[1]]
+Session ID: 4413985de099d6e1bea8e732b5bd272d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+at jdk.internal.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at utilities.WaitUtility.waitUntilElementIsVisible(WaitUtility.java:29)
+at pages.ManageNewsPage.isUserListed(ManageNewsPage.java:78)
+at testScripts.ManageNewsTest.verifyWhetherUserIsAbleToSearchAddedNews(ManageNewsTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWhetherUserIsAbleToSearchAddedNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T16:29:21 IST" name="driverQuit" finished-at="2025-10-17T16:29:21 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScripts.ManageNewsTest@41f69e84]" started-at="2025-10-17T19:05:42 IST" name="driverQuit" finished-at="2025-10-17T19:05:43 IST" duration-ms="254" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToSearchAddedNews status=SUCCESS method=ManageNewsTest.verifyWhetherUserIsAbleToSearchAddedNews()[pri:0, instance:testScripts.ManageNewsTest@41f69e84] output={null}]]]>
+                <![CDATA[[TestResult name=verifyWhetherUserIsAbleToSearchAddedNews status=FAILURE method=ManageNewsTest.verifyWhetherUserIsAbleToSearchAddedNews()[pri:0, instance:testScripts.ManageNewsTest@41f69e84] output={null}]]]>
               </value>
             </param>
           </params>
